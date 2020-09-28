@@ -1,0 +1,20 @@
+version: "1.0"
+
+stages:
+  - "test"
+
+steps:
+
+  task_dup_name:
+    stage: test
+    title: test task with dup name 1
+    image: "alpine"
+    commands:
+      - echo test 1
+
+  task_dup_name:
+    stage: test
+    title: test task with dup name 2
+    image: "alpine"
+    commands:
+      - echo test 2
