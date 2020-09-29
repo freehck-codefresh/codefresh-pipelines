@@ -19,6 +19,7 @@ steps:
     image: alpine
     commands:
       - echo $A
+      - sleep 20
     when:
       steps:
         - name: first
@@ -33,6 +34,7 @@ steps:
     image: alpine
     commands:
       - echo $B
+      - sleep 20
     when:
       steps:
         - name: first
