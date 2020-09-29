@@ -40,7 +40,7 @@ steps:
             - success
       condition:
         all:
-          run_a: '"${{A}}" == "1"'
+          run_a: '"${{B}}" == "1"'
 
   third:
     stage: third
