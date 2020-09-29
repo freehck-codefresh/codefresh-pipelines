@@ -51,9 +51,9 @@ steps:
       - echo third
     when:
       steps:
-        - name: first
+        - name: second_a
           on:
             - finished
-        - name: second
+        - name: second_b
           on:
             - finished
