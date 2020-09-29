@@ -1,0 +1,57 @@
+version: "1.0"
+
+mode: "parallel"
+
+stages:
+  - first
+  - second
+  - third
+
+steps:
+  first:
+    stage: first
+    image: alpine
+    commands:
+      - cf_export A=1 B=2
+
+  second_a:
+    stage: second
+    image: alpine
+    commands:
+      - echo $A
+    when:
+      steps:
+        - name: first
+          on:
+            - success
+      condition:
+        all:
+          run_a: '"${{A}}" == "1"'
+
+  second_b:
+    stage: second
+    image: alpine
+    commands:
+      - echo $B
+    when:
+      steps:
+        - name: first
+          on:
+            - success
+      condition:
+        all:
+          run_a: '"${{A}}" == "1"'
+
+  third:
+    stage: third
+    image: alpine
+    commands:
+      - echo third
+    when:
+      steps:
+        - name: first
+          on:
+            - finished
+        - name: second
+          on:
+            - finished
