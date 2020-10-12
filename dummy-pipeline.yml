@@ -1,0 +1,11 @@
+version: "1.0"
+
+stages:
+  - dummy
+
+steps:
+  dummy:
+    stage: dummy
+    image: alpine
+    commands:
+      - exit 0
