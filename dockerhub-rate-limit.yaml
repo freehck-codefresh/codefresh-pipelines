@@ -95,9 +95,6 @@ steps:
       - exit 0
     matrix:
       image:
-        - hello-world:nanoserver-1809
-        - hello-world:nanoserver-sac2016
-        - hello-world:nanoserver1709
         - busybox:1
         - busybox:1-glibc
         - busybox:1-musl
