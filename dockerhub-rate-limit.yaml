@@ -4,7 +4,7 @@ stages:
   - global
 
 steps:
-  step_global:
+  step_global_0:
     stage: global
     commands:
       - exit 0
@@ -21,6 +21,13 @@ steps:
         - alpine:3.10.4
         - alpine:3.10.5
         - alpine:3.11
+
+  step_global_1:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - alpine:3.11.0
         - alpine:3.11.2
         - alpine:3.11.3
@@ -32,6 +39,13 @@ steps:
         - alpine:3.8.5
         - alpine:3.9
         - alpine:3.9.5
+
+  step_global_2:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - alpine:3.9.6
         - alpine:edge
         - alpine:latest
@@ -43,6 +57,13 @@ steps:
         - golang:1.14-buster
         - golang:1.14-stretch
         - golang:1.14.9
+
+  step_global_3:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - golang:1.14.9-alpine
         - golang:1.14.9-alpine3.11
         - golang:1.14.9-alpine3.12
@@ -54,6 +75,13 @@ steps:
         - golang:1.15-buster
         - golang:1.15.2
         - golang:1.15.2-alpine
+
+  step_global_4:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - golang:1.15.2-alpine3.12
         - golang:1.15.2-buster
         - golang:alpine
@@ -65,6 +93,13 @@ steps:
         - hello-world:nanoserver
         - hello-world:nanoserver-1709
         - hello-world:nanoserver-1803
+
+  step_global_5:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - hello-world:nanoserver-1809
         - hello-world:nanoserver-sac2016
         - hello-world:nanoserver1709
@@ -76,6 +111,13 @@ steps:
         - busybox:1.31-glibc
         - busybox:1.31-musl
         - busybox:1.31-uclibc
+
+  step_global_6:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - busybox:1.31.0-uclibc
         - busybox:1.31.1
         - busybox:1.31.1-glibc
@@ -87,6 +129,13 @@ steps:
         - busybox:1.32-uclibc
         - busybox:1.32.0
         - busybox:1.32.0-glibc
+
+  step_global_7:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - busybox:1.32.0-musl
         - busybox:1.32.0-uclibc
         - busybox:glibc
@@ -98,6 +147,13 @@ steps:
         - nginx:1.18
         - nginx:1.18-perl
         - nginx:1.18.0
+
+  step_global_8:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - nginx:1.18.0-perl
         - nginx:1.19
         - nginx:1.19-alpine-perl
@@ -109,6 +165,13 @@ steps:
         - nginx:alpine
         - nginx:alpine-perl
         - nginx:latest
+
+  step_global_9:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - nginx:mainline
         - nginx:mainline-alpine
         - nginx:mainline-alpine-perl
@@ -120,6 +183,13 @@ steps:
         - nginx:stable-perl
         - debian:rc-buggy
         - debian:rc-buggy-20201012
+
+  step_global_10:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - debian:sid
         - debian:sid-20201012
         - debian:sid-20201012-slim
@@ -131,6 +201,13 @@ steps:
         - debian:stable-slim
         - debian:stretch
         - debian:stretch-20201012
+
+  step_global_11:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - debian:stretch-20201012-slim
         - debian:stretch-backports
         - debian:stretch-slim
@@ -142,6 +219,13 @@ steps:
         - debian:unstable
         - debian:unstable-20201012
         - debian:unstable-20201012-slim
+
+  step_global_12:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - debian:unstable-slim
         - ubuntu:14.04
         - ubuntu:16.04
@@ -153,6 +237,13 @@ steps:
         - ubuntu:bionic-20200921
         - ubuntu:devel
         - ubuntu:focal
+
+  step_global_13:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - ubuntu:focal-20200729
         - ubuntu:focal-20200916
         - ubuntu:focal-20200925
@@ -164,6 +255,13 @@ steps:
         - ubuntu:rolling
         - ubuntu:trusty
         - ubuntu:trusty-20191217
+
+  step_global_14:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - ubuntu:xenial
         - ubuntu:xenial-20200807
         - ubuntu:xenial-20200903
@@ -175,6 +273,13 @@ steps:
         - centos:8
         - centos:8.1.1911
         - centos:8.2.2004
+
+  step_global_15:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - centos:centos6.6
         - centos:centos6.7
         - centos:centos6.8
@@ -186,6 +291,13 @@ steps:
         - centos:centos7.3.1611
         - centos:centos7.4.1708
         - centos:centos7.5.1804
+
+  step_global_16:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - centos:centos7.6.1810
         - centos:centos7.7.1908
         - centos:centos7.8.2003
@@ -197,6 +309,13 @@ steps:
         - bash:4
         - bash:4.0
         - bash:4.0.44
+
+  step_global_17:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - bash:4.1
         - bash:4.1.17
         - bash:4.2
@@ -208,6 +327,13 @@ steps:
         - bash:5
         - bash:5.0
         - bash:5.0.18
+
+  step_global_18:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - bash:5.1-beta
         - bash:5.1-rc
         - bash:5.1-rc1
@@ -219,6 +345,13 @@ steps:
         - bash:latest
         - bash:rc
         - python:3.7.9-stretch
+
+  step_global_19:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - python:3.8
         - python:3.8-buster
         - python:3.8-slim
@@ -230,6 +363,13 @@ steps:
         - python:3.9
         - python:3.9-buster
         - python:3.9-slim
+
+  step_global_20:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - python:3.9-slim-buster
         - python:3.9.0
         - python:3.9.0-buster
@@ -241,6 +381,13 @@ steps:
         - python:rc-buster
         - python:rc-slim
         - python:rc-slim-buster
+
+  step_global_21:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - python:slim
         - python:slim-buster
         - perl:5.28-threaded
@@ -252,6 +399,13 @@ steps:
         - perl:5.30
         - perl:5.30-buster
         - perl:5.30-threaded
+
+  step_global_22:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - perl:5.30-threaded-buster
         - perl:5.30.3
         - perl:5.30.3-buster
@@ -263,6 +417,13 @@ steps:
         - perl:5.32-threaded-buster
         - perl:5.32.0
         - perl:5.32.0-buster
+
+  step_global_23:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - perl:5.32.0-threaded
         - perl:5.32.0-threaded-buster
         - perl:latest
@@ -274,6 +435,13 @@ steps:
         - fedora:23
         - fedora:24
         - fedora:25
+
+  step_global_24:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - fedora:26
         - fedora:26-modular
         - fedora:27
@@ -285,6 +453,13 @@ steps:
         - fedora:33
         - fedora:34
         - fedora:branched
+
+  step_global_25:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - fedora:heisenbug
         - fedora:latest
         - fedora:modular
@@ -296,6 +471,13 @@ steps:
         - rust:1.47
         - rust:1.47-alpine
         - rust:1.47-alpine3.11
+
+  step_global_26:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - rust:1.47-alpine3.12
         - rust:1.47-buster
         - rust:1.47-slim
@@ -307,6 +489,13 @@ steps:
         - rust:1.47.0-buster
         - rust:1.47.0-slim
         - rust:1.47.0-slim-buster
+
+  step_global_27:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - rust:alpine
         - rust:alpine3.11
         - rust:alpine3.12
@@ -318,6 +507,13 @@ steps:
         - pypy:3.6-7.3.2-slim-buster
         - pypy:3.6-buster
         - pypy:3.6-slim
+
+  step_global_28:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - pypy:3.6-slim-buster
         - pypy:3.7
         - pypy:3.7-7
@@ -329,6 +525,13 @@ steps:
         - pypy:3.7-7.3-slim
         - pypy:3.7-7.3-slim-buster
         - pypy:3.7-7.3.2
+
+  step_global_29:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - pypy:3.7-7.3.2-buster
         - pypy:3.7-7.3.2-slim
         - pypy:3.7-7.3.2-slim-buster
@@ -340,6 +543,13 @@ steps:
         - pypy:slim
         - pypy:slim-buster
         - clojure:openjdk-8-boot-2.8.3-buster
+
+  step_global_30:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - clojure:openjdk-8-boot-2.8.3-slim-buster
         - clojure:openjdk-8-boot-buster
         - clojure:openjdk-8-boot-slim-buster
@@ -351,6 +561,13 @@ steps:
         - clojure:openjdk-8-lein-buster
         - clojure:openjdk-8-lein-slim-buster
         - clojure:openjdk-8-slim-buster
+
+  step_global_31:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - clojure:openjdk-8-tools-deps
         - clojure:openjdk-8-tools-deps-1.10.1.708
         - clojure:openjdk-8-tools-deps-1.10.1.708-buster
@@ -362,6 +579,13 @@ steps:
         - clojure:tools-deps-1.10.1.708
         - clojure:tools-deps-1.10.1.708-buster
         - clojure:tools-deps-1.10.1.708-slim-buster
+
+  step_global_32:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - clojure:tools-deps-buster
         - clojure:tools-deps-slim-buster
         - haskell:8
@@ -373,6 +597,13 @@ steps:
         - haskell:8.10.1
         - haskell:8.10.1-buster
         - haskell:8.10.1-stretch
+
+  step_global_33:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - haskell:8.10.2
         - haskell:8.10.2-buster
         - haskell:8.10.2-stretch
@@ -384,6 +615,13 @@ steps:
         - haskell:8.8.3-buster
         - haskell:8.8.3-stretch
         - haskell:8.8.4
+
+  step_global_34:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - haskell:8.8.4-buster
         - haskell:8.8.4-stretch
         - haskell:buster
@@ -395,6 +633,13 @@ steps:
         - php:8.0.0rc1-zts
         - php:8.0.0rc1-zts-buster
         - php:apache
+
+  step_global_35:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - php:apache-buster
         - php:buster
         - php:cli
@@ -406,6 +651,13 @@ steps:
         - php:rc-apache
         - php:rc-apache-buster
         - php:rc-buster
+
+  step_global_36:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - php:rc-cli
         - php:rc-cli-buster
         - php:rc-fpm
@@ -417,6 +669,13 @@ steps:
         - crux:3.0
         - crux:3.1
         - crux:3.2
+
+  step_global_37:
+    stage: global
+    commands:
+      - exit 0
+    matrix:
+      image:
         - crux:3.4
         - crux:latest
         - sl:6
