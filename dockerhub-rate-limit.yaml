@@ -88,11 +88,6 @@ steps:
         - golang:alpine3.12
         - golang:buster
         - golang:latest
-        - hello-world:latest
-        - hello-world:linux
-        - hello-world:nanoserver
-        - hello-world:nanoserver-1709
-        - hello-world:nanoserver-1803
 
   step_global_5:
     stage: global
